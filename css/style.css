@@ -9,15 +9,20 @@ header {
 
 h1 {
   text-align: center;
-  font-family: 'shrikhand';
+  font-family: "shrikhand";
   font-weight: 100;
   margin-top: 10px;
   -webkit-box-shadow: 0px 3px 3px #b4b3b3;
           box-shadow: 0px 3px 3px #b4b3b3;
 }
 
+h2, h3 {
+  font-family: "shrikhand";
+  font-weight: 100;
+}
+
 p {
-  font-family: 'roboto';
+  font-family: "roboto";
   color: black;
   font-weight: bold;
 }
@@ -49,7 +54,7 @@ section {
   padding-bottom: 50px;
 }
 
-.decouvrez {
+section .decouvrez {
   margin-top: -5px;
   margin-bottom: 30px;
 }
@@ -59,8 +64,8 @@ button {
   padding: 15px 30px;
   color: white;
   border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 button:hover {
@@ -72,7 +77,12 @@ button:hover {
   margin-top: 50px;
 }
 
-.fonctionnement {
+.s-fonctionnement .titre_fonctionnement {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.s-fonctionnement .fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +96,7 @@ button:hover {
   text-align: left;
 }
 
-.box-fonctionnement {
+.s-fonctionnement .box-fonctionnement {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,28 +113,23 @@ button:hover {
   padding: 10px 20px 10px 0px;
 }
 
-.box-fonctionnement i {
+.s-fonctionnement .box-fonctionnement i {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.box-fonctionnement span {
+.s-fonctionnement .box-fonctionnement span {
   border-radius: 20px;
   margin-left: -15px;
   width: 20px;
   padding: 5px;
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   text-align: center;
 }
 
-.titre_fonctionnement {
-  text-align: left;
-  margin-left: 20px;
-}
-
 .fa-store {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .s-restaurant {
@@ -138,10 +143,9 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #f5f3f3;
 }
 
-.box-restaurant {
+.s-restaurant .box-restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,6 +155,7 @@ button:hover {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  background-color: #f5f3f3;
   margin-bottom: 50px;
 }
 
@@ -161,6 +166,7 @@ button:hover {
   background-color: white;
   border-radius: 30px;
   text-align: left;
+  position: relative;
 }
 
 .restaurant a {
@@ -176,7 +182,6 @@ button:hover {
 }
 
 .restaurant h3 {
-  font-family: 'shrikhand';
   font-weight: 100;
   color: black;
   margin-left: 20px;
@@ -185,7 +190,6 @@ button:hover {
 }
 
 .restaurant p {
-  font-family: 'roboto';
   margin-left: 20px;
 }
 
@@ -197,21 +201,16 @@ button:hover {
   color: black;
 }
 
-.new {
-  background-color: #99E2D0;
+.restaurant .new {
+  background-color: #99e2d0;
   color: #7fc5b4;
   font-size: 16px;
   padding: 7px 15px;
   position: absolute;
-  top: 800px;
-  margin-left: 25%;
+  top: 20px;
+  right: 20px;
   font-weight: bold;
   border-radius: 5px;
-}
-
-.logo img {
-  font-size: 20px;
-  margin-top: 10px;
 }
 
 footer {
@@ -222,6 +221,14 @@ footer {
   padding-bottom: 20px;
 }
 
+footer h2 {
+  margin-left: 40px;
+  padding-top: 20px;
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+}
+
 footer li {
   list-style-type: none;
   color: white;
@@ -230,15 +237,6 @@ footer li {
 
 footer i {
   margin-right: 10px;
-}
-
-footer h2 {
-  margin-left: 40px;
-  padding-top: 20px;
-  color: white;
-  font-family: 'shrikhand';
-  font-weight: 100;
-  font-size: 20px;
 }
 
 footer a {
@@ -263,7 +261,7 @@ footer a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .box-restaurant {
+  .s-restaurant .box-restaurant {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -279,9 +277,6 @@ footer a {
     width: auto;
     margin-left: 40px;
     margin-right: 40px;
-  }
-  .new {
-    margin-left: 75%;
   }
 }
 
@@ -302,7 +297,7 @@ footer a {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .box-restaurant {
+  .s-restaurant .box-restaurant {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -312,15 +307,13 @@ footer a {
             flex-direction: column;
     margin-bottom: 0px;
   }
-  .restaurant {
+  .s-restaurant .restaurant {
     width: auto;
     margin-left: 40px;
     margin-right: 40px;
   }
-  .new {
+  .s-restaurant .new {
     font-size: 15px;
-    margin-top: 20px;
-    margin-left: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

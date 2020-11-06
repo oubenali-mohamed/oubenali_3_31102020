@@ -7,7 +7,7 @@ header {
   height: 50px;
 }
 
-.retour {
+header .retour {
   float: left;
   text-decoration: none;
   color: black;
@@ -17,9 +17,33 @@ header {
 
 h1 {
   text-align: center;
-  font-family: 'shrikhand';
+  font-family: "shrikhand";
   font-weight: 100;
   margin-top: 5px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "shrikhand";
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
+  margin-left: 20px;
 }
 
 img {
@@ -35,24 +59,7 @@ img {
   padding: 10px 20px 50px;
 }
 
-h2 {
-  font-size: 30px;
-  font-weight: 100;
-  font-family: 'shrikhand';
-  margin-top: 30px;
-  margin-left: 10px;
-  margin-bottom: 0px;
-}
-
-h3 {
-  font-size: 16px;
-  color: black;
-  font-weight: 100;
-  text-transform: uppercase;
-  margin-left: 10px;
-}
-
-.titre {
+.s-menu .titre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,18 +75,18 @@ h3 {
           align-items: center;
 }
 
-.trait {
+.menu {
+  margin-top: 30px;
+}
+
+.menu .trait {
   width: 45px;
   background-color: #99e2d0;
   height: 3px;
   margin-left: 10px;
 }
 
-.menu {
-  margin-top: 30px;
-}
-
-.menu_d {
+.menu .menu_d {
   background-color: white;
   border-radius: 20px;
   margin-top: 20px;
@@ -89,25 +96,18 @@ h3 {
           box-shadow: 5px 5px 10px #d4d4d4;
 }
 
-h4 {
-  font-size: 20px;
-  font-weight: 600;
-  padding-top: 10px;
-  margin-left: 20px;
+.menu .menu_d .prix {
+  position: absolute;
+  right: 50px;
+  margin-top: -25px;
+  font-weight: bold;
 }
 
 p {
   margin-top: -20px;
   margin-left: 20px;
-  font-family: 'roboto';
+  font-family: "roboto";
   font-weight: 600;
-}
-
-.prix {
-  position: absolute;
-  right: 50px;
-  margin-top: -25px;
-  font-weight: bold;
 }
 
 button {
@@ -119,8 +119,8 @@ button {
   padding: 15px 30px;
   color: white;
   border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 button:hover {
@@ -135,16 +135,6 @@ footer {
   padding-bottom: 20px;
 }
 
-footer li {
-  list-style-type: none;
-  color: white;
-  margin-bottom: 15px;
-}
-
-footer i {
-  margin-right: 10px;
-}
-
 footer h2 {
   margin-left: 40px;
   padding-top: 20px;
@@ -154,7 +144,17 @@ footer h2 {
   font-size: 20px;
 }
 
-footer a {
+footer li {
+  list-style-type: none;
+  color: white;
+  margin-bottom: 15px;
+}
+
+footer li i {
+  margin-right: 10px;
+}
+
+footer li a {
   color: white;
   text-decoration: none;
 }
@@ -180,6 +180,18 @@ footer a {
   button {
     width: 50%;
     margin-left: 25%;
+  }
+  h4 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  p {
+    font-size: 14px;
+    padding-top: 5px;
+    margin-left: 10px;
+  }
+  .prix {
+    margin-right: -10px;
   }
 }
 /*# sourceMappingURL=menu.css.map */
