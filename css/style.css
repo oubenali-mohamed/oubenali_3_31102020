@@ -201,6 +201,20 @@ button:hover {
   color: black;
 }
 
+.restaurant .coeur1 {
+  z-index: 1;
+}
+
+.restaurant .coeur2 {
+  color: transparent;
+  cursor: pointer;
+}
+
+.restaurant .coeur2:hover {
+  color: #9356dc;
+  z-index: 0;
+}
+
 .restaurant .new {
   background-color: #99e2d0;
   color: #7fc5b4;

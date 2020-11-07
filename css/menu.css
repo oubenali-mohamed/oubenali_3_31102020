@@ -51,6 +51,14 @@ img {
   height: 20%;
 }
 
+.coeur1 {
+  z-index: 1;
+}
+
+.coeur2 {
+  z-index: -1;
+}
+
 .s-menu {
   position: relative;
   background: #f5f3f3;
@@ -73,6 +81,25 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.s-menu .titre i {
+  float: right;
+  margin-left: -20px;
+}
+
+.coeur1 {
+  z-index: 1;
+}
+
+.coeur2 {
+  color: transparent;
+  cursor: pointer;
+}
+
+.coeur2:hover {
+  color: #9356dc;
+  z-index: 0;
 }
 
 .menu {
