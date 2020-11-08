@@ -50,13 +50,7 @@ img{
     width: 100%;
     height: 20%;
 }
-.coeur1{
-    
-    z-index: 1;
-}
-.coeur2{
-    z-index: -1;
-}
+
   
 .s-menu{
     position: relative;
@@ -75,16 +69,18 @@ img{
         }
     }
 }
-.coeur1{
-    z-index: 1;
+.coeur{
+    .far{
+      z-index: 1;
+      }
+    .fas{
+      color: transparent;
+      cursor: pointer;
+      }
+    .fas:hover{
+      color: $color-primary;
+      z-index: 0;
     }
-  .coeur2{
-    color: transparent;
-    cursor: pointer;
-    }
-  .coeur2:hover{
-    color: $color-primary;
-    z-index: 0;
   }
 .menu{
      margin-top: 30px;

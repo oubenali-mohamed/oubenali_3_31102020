@@ -201,16 +201,16 @@ button:hover {
   color: black;
 }
 
-.restaurant .coeur1 {
+.restaurant .coeur .far {
   z-index: 1;
 }
 
-.restaurant .coeur2 {
+.restaurant .coeur .fas {
   color: transparent;
   cursor: pointer;
 }
 
-.restaurant .coeur2:hover {
+.restaurant .coeur .fas:hover {
   color: #9356dc;
   z-index: 0;
 }

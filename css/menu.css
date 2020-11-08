@@ -51,14 +51,6 @@ img {
   height: 20%;
 }
 
-.coeur1 {
-  z-index: 1;
-}
-
-.coeur2 {
-  z-index: -1;
-}
-
 .s-menu {
   position: relative;
   background: #f5f3f3;
@@ -88,16 +80,16 @@ img {
   margin-left: -20px;
 }
 
-.coeur1 {
+.coeur .far {
   z-index: 1;
 }
 
-.coeur2 {
+.coeur .fas {
   color: transparent;
   cursor: pointer;
 }
 
-.coeur2:hover {
+.coeur .fas:hover {
   color: #9356dc;
   z-index: 0;
 }

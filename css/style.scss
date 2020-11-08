@@ -146,17 +146,20 @@ button {
     font-size: 30px;
     color: black;
   }
-  .coeur1{
-    z-index: 1;
+  .coeur{
+    .far{
+      z-index: 1;
+      }
+    .fas{
+      color: transparent;
+      cursor: pointer;
+      }
+    .fas:hover{
+      color: $color-primary;
+      z-index: 0;
     }
-  .coeur2{
-    color: transparent;
-    cursor: pointer;
-    }
-  .coeur2:hover{
-    color: $color-primary;
-    z-index: 0;
   }
+  
   .new {
     background-color: $color-tertiary;
     color: #7fc5b4;
