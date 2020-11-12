@@ -322,15 +322,15 @@ footer a {
             flex-direction: column;
     margin-bottom: 0px;
   }
-  .s-restaurant .restaurant {
+  .restaurant {
     width: auto;
     margin-left: 40px;
     margin-right: 40px;
   }
-  .s-restaurant .restaurant h3 {
+  .restaurant h3 {
     font-size: 16px;
   }
-  .s-restaurant .new {
+  .restaurant .new {
     font-size: 15px;
   }
 }

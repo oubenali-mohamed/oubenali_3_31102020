@@ -172,22 +172,31 @@ footer{
     }
     .s-menu{
         margin-top: -20px;
+        h2{
+            font-size: 25px;
+        }
+        .coeur{
+            margin-top: 30px;
+        }
+    }
+    .menu_d{
+        h4{
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        p{
+            font-size: 12px;
+            padding-top: 5px;
+            margin-left: 10px;
+        }
+        .prix{
+            margin-right: -20px;
+           
+        }
     }
     button{
         width: 50%;
         margin-left: 25%;
     }
-    h4{
-        font-size: 16px;
-        margin-left: 10px;
-    }
-    p{
-        font-size: 12px;
-        padding-top: 5px;
-        margin-left: 10px;
-    }
-    .prix{
-        margin-right: -20px;
-       
-    }
+    
 }
