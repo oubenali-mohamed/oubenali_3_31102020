@@ -202,16 +202,16 @@ footer li a {
     margin-left: 25%;
   }
   h4 {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 10px;
   }
   p {
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 5px;
     margin-left: 10px;
   }
   .prix {
-    margin-right: -10px;
+    margin-right: -20px;
   }
 }
 /*# sourceMappingURL=menu.css.map */
