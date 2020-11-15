@@ -91,17 +91,46 @@ img{
         margin-left: 10px;
     }
     .menu_d{
+        position: relative;
         background-color: white;
+        cursor: pointer;
         border-radius: 20px;
         margin-top: 20px;
         height: 70px;
         margin-bottom: 20px;
         box-shadow: 5px 5px 10px #d4d4d4;
+        &:hover .box{
+            transform: translate(-50px, 0);
+            transition: transform 0.5s ease-in-out;
+        }
+        &:hover .valider{
+            transform: rotate(-360deg);
+        }
+        &:hover .prix{
+            transform: translate(-100px, 0);
+            transition: transform 0.5s ease-in-out;
+        }
         .prix{
             position: absolute;
             right: 50px;
             margin-top: -25px;
             font-weight: bold;
+            margin-right: 25px;
+        }
+        .box{
+           background-color: $color-tertiary;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 70px;
+            margin-left: 30px;
+            border-radius: 0px 20px 20px 0px;
+           .valider{
+                color: white;
+                margin: 20px;
+                transition: transform 500ms ease-in-out;
+            }
         }
     }
 }

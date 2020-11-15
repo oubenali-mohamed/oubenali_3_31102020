@@ -106,7 +106,9 @@ img {
 }
 
 .menu .menu_d {
+  position: relative;
   background-color: white;
+  cursor: pointer;
   border-radius: 20px;
   margin-top: 20px;
   height: 70px;
@@ -115,11 +117,55 @@ img {
           box-shadow: 5px 5px 10px #d4d4d4;
 }
 
+.menu .menu_d:hover .box {
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.menu .menu_d:hover .valider {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.menu .menu_d:hover .prix {
+  -webkit-transform: translate(-100px, 0);
+          transform: translate(-100px, 0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
 .menu .menu_d .prix {
   position: absolute;
   right: 50px;
   margin-top: -25px;
   font-weight: bold;
+  margin-right: 25px;
+}
+
+.menu .menu_d .box {
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 70px;
+  margin-left: 30px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.menu .menu_d .box .valider {
+  color: white;
+  margin: 20px;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 p {

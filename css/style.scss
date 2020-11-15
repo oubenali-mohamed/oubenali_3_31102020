@@ -9,7 +9,37 @@ body {
   margin: 0px;
   padding: 0px;
 }
-
+.loading{
+  border-top: 2px solid $color-primary;
+  border-bottom: 2px solid $color-secondary;
+  border-right: 2px solid $color-tertiary;
+  border-left: 2px solid $color-tertiary;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 48%;
+}
+ @-webkit-keyframes spin {
+  0%{
+    webkit-transform: rotate(0deg);
+  }
+  100%{
+    webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 header {
   margin-bottom: -19px;
 }
