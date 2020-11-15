@@ -118,8 +118,8 @@ img {
 }
 
 .menu .menu_d:hover .box {
-  -webkit-transform: translate(-50px, 0);
-          transform: translate(-50px, 0);
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -132,8 +132,8 @@ img {
 }
 
 .menu .menu_d:hover .prix {
-  -webkit-transform: translate(-100px, 0);
-          transform: translate(-100px, 0);
+  -webkit-transform: translate(-50px, 0);
+          transform: translate(-50px, 0);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -145,7 +145,7 @@ img {
   right: 50px;
   margin-top: -25px;
   font-weight: bold;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .menu .menu_d .box {
@@ -154,14 +154,14 @@ img {
   top: 0;
   right: 0;
   height: 100%;
-  width: 70px;
-  margin-left: 30px;
+  width: 60px;
   border-radius: 0px 20px 20px 0px;
 }
 
 .menu .menu_d .box .valider {
   color: white;
-  margin: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
