@@ -106,6 +106,39 @@ img {
 }
 
 .menu .menu_d {
+  -webkit-animation: appear 1s linear;
+  animation: appear 1s linear;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    -webkit-transform: scaleY(0);
+    -webkit-transform-origin: 50% top;
+            transform-origin: 50% top;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    -webkit-transform-origin: 50% top;
+            transform-origin: 50% top;
+  }
+}
+
+@keyframes appear {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 50% top;
+            transform-origin: 50% top;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 50% top;
+            transform-origin: 50% top;
+  }
+}
+
+.menu .menu_d {
   position: relative;
   background-color: white;
   cursor: pointer;
@@ -124,6 +157,7 @@ img {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  visibility: visible;
 }
 
 .menu .menu_d:hover .valider {
@@ -132,8 +166,8 @@ img {
 }
 
 .menu .menu_d:hover .prix {
-  -webkit-transform: translate(-50px, 0);
-          transform: translate(-50px, 0);
+  -webkit-transform: translate(-100px);
+          transform: translate(-100px);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -142,13 +176,14 @@ img {
 
 .menu .menu_d .prix {
   position: absolute;
-  right: 50px;
+  right: 0px;
   margin-top: -25px;
   font-weight: bold;
   margin-right: 20px;
 }
 
 .menu .menu_d .box {
+  visibility: hidden;
   background-color: #99e2d0;
   position: absolute;
   top: 0;
