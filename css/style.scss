@@ -8,7 +8,28 @@ $font-text: "roboto";
 body {
   margin: 0px;
   padding: 0px;
-}
+  -webkit-animation: appear 1s linear;
+    -o-animation: appear 1s linear;
+    animation: appear 1s linear;
+  }
+  
+  @-webkit-keyframes appear {
+    0%{
+      -webkit-transform: scale(0);
+      }
+    100%{
+        -webkit-transform: scale(1);
+      }
+  }
+  @keyframes appear {
+    0%{
+        transform: scale(0);
+      }
+    100%{
+       transform: scale(1);
+      }
+  }
+
 .loading{
   border-top: 5px solid $color-primary;
   border-bottom: 5px solid $color-secondary;
@@ -24,12 +45,14 @@ body {
   -webkit-animation: spin 1s linear both;
   -o-animation: spin 1s linear both;
   animation: spin 1s linear both;
-  }
+}
+
  @-webkit-keyframes spin {
   0%{
     webkit-transform: rotate(0deg);
     opacity: 1;
-  }
+    visibility: visible;
+    }
   100%{
     webkit-transform: rotate(360deg);
     opacity: 0;
@@ -39,7 +62,8 @@ body {
   0%{
     transform: rotate(0deg);
     opacity: 1;
- }
+    visibility: visible;
+  }
   100%{
     transform: rotate(360deg);
     opacity: 0;
