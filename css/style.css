@@ -39,8 +39,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-animation: spin 1.5s linear both;
-  animation: spin 1.5s linear both;
+  -webkit-animation: spin 1.9s linear both;
+  animation: spin 1.9s linear both;
 }
 
 @-webkit-keyframes spin {
