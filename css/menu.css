@@ -214,6 +214,14 @@ img {
           box-shadow: 5px 5px 10px #d4d4d4;
 }
 
+.menu .menu_d:hover {
+  width: 98%;
+}
+
+.menu .menu_d:hover .box {
+  margin-right: -50px;
+}
+
 .menu .menu_d:hover .box {
   -webkit-transform: translate(-50px);
           transform: translate(-50px);
@@ -230,8 +238,8 @@ img {
 }
 
 .menu .menu_d:hover .prix {
-  -webkit-transform: translate(-100px);
-          transform: translate(-100px);
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
