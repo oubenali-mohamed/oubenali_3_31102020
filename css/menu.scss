@@ -5,11 +5,22 @@ $color-tertiary: #99e2d0;
 $font-titre: "shrikhand";
 $font-text: "roboto";
 
-body{
-    margin: 0px;
-    padding: 0px;
-}
-.loading{
+body {
+    animation: 1.1s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  
+  @keyframes fadeIn {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  .loading{
     border-top: 5px solid $color-primary;
     border-bottom: 5px solid $color-secondary;
     border-right: 5px solid $color-tertiary;
@@ -22,27 +33,28 @@ body{
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     -webkit-animation: spin 1s linear both;
-    -o-animation: spin 1s linear both;
+    -o-animation: spin 1s linear both ;
     animation: spin 1s linear both;
-    }
+  }
+  
    @-webkit-keyframes spin {
     0%{
       webkit-transform: rotate(0deg);
-      opacity: 1;
-    }
+      visibility: visible;
+      }
     100%{
       webkit-transform: rotate(360deg);
-      opacity: 0;
+      visibility: hidden;
     }
   }
   @keyframes spin {
     0%{
       transform: rotate(0deg);
-      opacity: 1;
-   }
+      visibility: visible;
+    }
     100%{
       transform: rotate(360deg);
-      opacity: 0;
+      visibility: hidden;
     }
   }
 header{
@@ -127,10 +139,10 @@ img{
         margin-left: 10px;
     }
     .menu_d{
-        -webkit-animation: appear 1s linear;
-        -o-animation: appear 1s linear;
-        animation: appear 1s linear;
-       }
+        -webkit-animation: appear 2.2s linear;
+        -o-animation: appear 2.2s linear;
+        animation: appear 2.2s linear;
+        }
     @-webkit-keyframes appear {
         0%{
           -webkit-transform: scaleY(0);

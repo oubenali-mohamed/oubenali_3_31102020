@@ -1,6 +1,27 @@
 body {
-  margin: 0px;
-  padding: 0px;
+  -webkit-animation: 1.1s fadeIn;
+          animation: 1.1s fadeIn;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@-webkit-keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .loading {
@@ -25,11 +46,11 @@ body {
 @-webkit-keyframes spin {
   0% {
     webkit-transform: rotate(0deg);
-    opacity: 1;
+    visibility: visible;
   }
   100% {
     webkit-transform: rotate(360deg);
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -37,12 +58,12 @@ body {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
-    opacity: 1;
+    visibility: visible;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -149,8 +170,8 @@ img {
 }
 
 .menu .menu_d {
-  -webkit-animation: appear 1s linear;
-  animation: appear 1s linear;
+  -webkit-animation: appear 2.2s linear;
+  animation: appear 2.2s linear;
 }
 
 @-webkit-keyframes appear {
