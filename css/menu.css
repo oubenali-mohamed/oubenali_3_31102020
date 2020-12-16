@@ -1,8 +1,8 @@
 body {
   -webkit-animation: 1.1s fadeIn;
           animation: 1.1s fadeIn;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   visibility: hidden;
 }
 
@@ -225,10 +225,10 @@ img {
 .menu .menu_d:hover .box {
   -webkit-transform: translate(-50px);
           transform: translate(-50px);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
   visibility: visible;
 }
 
@@ -240,10 +240,10 @@ img {
 .menu .menu_d:hover .prix {
   -webkit-transform: translate(-50px);
           transform: translate(-50px);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .menu .menu_d .prix {
@@ -269,10 +269,10 @@ img {
   color: white;
   margin-top: 20px;
   margin-left: 10px;
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 p {
@@ -342,7 +342,7 @@ footer li a {
   }
 }
 
-@media all and (max-device-width: 480px) {
+@media all and (max-width: 480px) {
   body {
     width: auto;
     height: auto;
